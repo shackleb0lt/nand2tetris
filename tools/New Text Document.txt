@@ -1,0 +1,24 @@
+	Mux16(a=x,b=false,sel=zx,out=u1);
+	Mux16(a=y,b=false,sel=zy,out=v1);
+
+	Not16(in=u1,out=u2);
+	Not16(in=v1,out=v2);
+
+	Mux16(a=u1,b=u2,sel=nx,out=u3);
+	Mux16(a=v1,b=v2,sel=ny,out=v3);
+
+	And16(a=u3,b=v3,out=w1);
+	Add16(a=u3,b=v3,out=w2);
+
+	Mux16(a=w1,b=w2,sel=f,out=w3);
+
+	Not16(in=w3,out=w4);
+
+	Mux16(a=w3,b=w4,sel=no,out=out);
+
+	Or8Way(in=out[0..7],out=p);
+	Or8Way(in=out[8..15],out=q);
+	Or(a=p,b=q,out=o2);
+	Not(in=o2,out=zr);
+	
+	And(a=out[15],b=out[15],out=ng);

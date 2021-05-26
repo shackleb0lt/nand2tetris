@@ -1,0 +1,279 @@
+//code for push constant 10
+@10
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+//code for pop local 0
+@LCL
+D=M
+@0
+D=A+D
+@R13
+M=D
+@SP
+A=M
+A=A-1
+D=M
+@R13
+A=M
+M=D
+@SP
+M=M-1
+//code for push constant 21
+@21
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+//code for push constant 22
+@22
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+//code for pop argument 2
+@ARG
+D=M
+@2
+D=A+D
+@R13
+M=D
+@SP
+A=M
+A=A-1
+D=M
+@R13
+A=M
+M=D
+@SP
+M=M-1
+//code for pop argument 1
+@ARG
+D=M
+@1
+D=A+D
+@R13
+M=D
+@SP
+A=M
+A=A-1
+D=M
+@R13
+A=M
+M=D
+@SP
+M=M-1
+//code for push constant 36
+@36
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+//code for pop this 6
+@THIS
+D=M
+@6
+D=A+D
+@R13
+M=D
+@SP
+A=M
+A=A-1
+D=M
+@R13
+A=M
+M=D
+@SP
+M=M-1
+//code for push constant 42
+@42
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+//code for push constant 45
+@45
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+//code for pop that 5
+@THAT
+D=M
+@5
+D=A+D
+@R13
+M=D
+@SP
+A=M
+A=A-1
+D=M
+@R13
+A=M
+M=D
+@SP
+M=M-1
+//code for pop that 2
+@THAT
+D=M
+@2
+D=A+D
+@R13
+M=D
+@SP
+A=M
+A=A-1
+D=M
+@R13
+A=M
+M=D
+@SP
+M=M-1
+//code for push constant 510
+@510
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+//code for pop temp 6
+@5
+D=A
+@6
+D=A+D
+@R13
+M=D
+@SP
+A=M
+A=A-1
+D=M
+@R13
+A=M
+M=D
+@SP
+M=M-1
+//code for push local 0
+@LCL
+D=M
+@0
+A=A+D
+D=M
+@SP
+A=M
+M=D
+@SP
+M=M+1
+//code for push that 5
+@THAT
+D=M
+@5
+A=A+D
+D=M
+@SP
+A=M
+M=D
+@SP
+M=M+1
+//code for add  
+@SP
+A=M
+A=A-1
+D=M
+A=A-1
+M=M+D
+@SP
+M=M-1
+//code for push argument 1
+@ARG
+D=M
+ @1
+ A=A+D
+ D=M
+ @SP
+ A=M
+ M=D
+ @SP
+ M=M+1
+//code for sub  
+@SP
+A=M
+A=A-1
+D=M
+A=A-1
+M=M-D
+@SP
+M=M-1
+//code for push this 6
+@THIS
+D=M
+@6
+A=A+D
+D=M
+@SP
+A=M
+M=D
+@SP
+M=M+1
+//code for push this 6
+@THIS
+D=M
+@6
+A=A+D
+D=M
+@SP
+A=M
+M=D
+@SP
+M=M+1
+//code for add  
+@SP
+A=M
+A=A-1
+D=M
+A=A-1
+M=M+D
+@SP
+M=M-1
+//code for sub  
+@SP
+A=M
+A=A-1
+D=M
+A=A-1
+M=M-D
+@SP
+M=M-1
+//code for push temp 6
+@5
+D=A
+@6
+A=A+D
+D=M
+@SP
+A=M
+M=D
+@SP
+M=M+1
+//code for add  
+@SP
+A=M
+A=A-1
+D=M
+A=A-1
+M=M+D
+@SP
+M=M-1
